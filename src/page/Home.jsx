@@ -25,7 +25,7 @@ const Home = () => {
             <div className='w-4/5 h-4/5 md:w-full md:h-3/6 flex flex-wrap items-center justify-center  m-auto text-center bounce'>
                 <article className='mt-5'>
                     <h1 className='text-2xl md:text-5xl uppercase tracking-wider font-semibold font-mono dark:text-slate-300 show'>Joselle E. Callora</h1>
-                    <p className='text-sm text-justify md:text-center md:w-4/5 m-auto md:text-base dark:text-slate-300 md:px-10 py-5 tracking-wider capitalize font-mono up cursor-default'>A dedicated software developer with expertise in MERN, HTML, CSS, PHP, MYSQL, and JavaScript. I excel in delivering high-quality projects on time, creating visually appealing websites, and developing dynamic web applications. With strong problem-solving and communication skills, I thrive in challenging projects, committed to exceptional results and project success.
+                    <p className='text-sm text-justify md:text-center md:w-4/5 m-auto md:text-base dark:text-slate-300 md:px-10 py-5 tracking-wider capitalize font-mono up cursor-default'>A dedicated website developer with expertise in MongoDB, ExpressJs, NodeJs, React, HTML, CSS, PHP - Procedural, MySQL, and JavaScript. I excel in delivering high-quality projects on time, creating visually appealing websites, and developing dynamic web applications. With strong problem-solving and communication skills, I thrive in challenging projects, committed to exceptional results and project success.
                     </p>
                 </article>
             </div>
