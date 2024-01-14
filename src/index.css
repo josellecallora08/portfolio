@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.background{
+    background-image: none;
+}
+.open-card{
+    animation: opencard 1s;
+    overflow: hidden;
+}
+.bounce{
+    animation: bounce 1s;
+}
+.up{
+    animation: up 2s;
+    overflow: hidden;
+}
+.left-transition{
+    animation: left-transition 2s;
+}
+.right-transition{
+    animation: right-transition 2s;
+}
+.show{
+    animation: show 2s;
+}
+@keyframes show {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes left-transition {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes right-transition {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes opencard {
+    from{
+       width: 0px; 
+    }
+   to{
+        width: 100%;
+    }
+}
+@keyframes bounce {
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@media screen and (min-width: 470px) {
+    @keyframes opencard {
+        from{
+           width: 0px; 
+        }
+       to{
+            width: 80%;
+        }
+    }
+    @keyframes up {
+        0%{
+            transform: translateY(30%);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+}
