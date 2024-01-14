@@ -25,19 +25,19 @@ const Home = () => {
             <div className='w-4/5 h-4/5 md:w-full md:h-3/6 flex flex-wrap items-center justify-center  m-auto text-center bounce'>
                 <article className='mt-5'>
                     <h1 className='text-2xl md:text-5xl uppercase tracking-wider font-semibold font-mono dark:text-slate-300 show'>Joselle E. Callora</h1>
-                    <p className='text-sm text-justify md:text-center md:w-4/5 m-auto md:text-base dark:text-slate-300 md:px-10 py-5 tracking-wider capitalize font-mono up cursor-default'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ex minima debitis explicabo corrupti, distinctio minus excepturi quasi similique impedit rerum quos neque mollitia ut, odio et, iure ipsa earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente ex minima debitis explicabo corrupti, distinctio minus excepturi quasi similique impedit rerum quos neque mollitia ut, odio et, iure ipsa earum!</p>
+                    <p className='text-sm text-justify md:text-center md:w-4/5 m-auto md:text-base dark:text-slate-300 md:px-10 py-5 tracking-wider capitalize font-mono up cursor-default'>A dedicated software developer with expertise in MERN, HTML, CSS, PHP, MYSQL, and JavaScript. I excel in delivering high-quality projects on time, creating visually appealing websites, and developing dynamic web applications. With strong problem-solving and communication skills, I thrive in challenging projects, committed to exceptional results and project success.
+                    </p>
                 </article>
             </div>
             <div className='w-4/5 h-4/5 md:h-3/6 md:w-full md:flex m-auto'>
                 <div className='w-full h-3/6 md:h-full left-transition md:bg-green-800/20 dark:text-slate-300'>
-                   <div className='w-full md:w-4/5 h-4/5 py-5 m-auto font-mono xl:text-2xl'>
+                   <div className='w-full md:w-4/5 h-4/5 py-5 m-auto font-mono xl:text-xl'>
                         <ul className='flex gap-2 flex-wrap'>
                             <li className='p-2 px-5 border w-fit rounded-md'>Work</li>
                             <li className='p-2 px-5 border w-fit rounded-md'>Project</li>
                             <li className='p-2 px-5 border w-fit rounded-md'>Education</li>
                             <li className='p-2 px-5 border w-fit rounded-md'>Awards</li>
                             <li className='p-2 px-5 border w-fit rounded-md'>About</li>
-                            <li className='p-2 px-5 border w-fit rounded-md'></li>
                         </ul>
                    </div>
                 </div>
