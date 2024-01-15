@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
-import moon from '../assets/images/moon-icon.svg'
-import sun from '../assets/images/sun-icon.svg'
+import moon from '/moon-icon.svg'
+import sun from '/sun-icon.svg'
 import { toggleTheme } from '../features/themeslice'
 
 
