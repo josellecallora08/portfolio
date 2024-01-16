@@ -47,6 +47,34 @@ const Home = () => {
             document.removeEventListener('keydown', handleKeyDown);
         };
     }, []);
+
+    useEffect(() => {
+        const close_modal = false;
+        const components = ["about", "awards", "education", "project", "work"]
+
+        const closeModal = () => {
+            setAwardsModal(close_modal);
+            setAboutModal(close_modal);
+            setEducationModal(close_modal);
+            setProjectModal(close_modal);
+            setWorkModal(close_modal);
+        }
+        const clickBackground = (e) => {
+            components.forEach(component => {
+                if(e.target === document.getElementById(component)){
+                    closeModal();
+                    console.log(e.target)
+                }
+            });
+        }
+
+        document.addEventListener('click', clickBackground)
+
+        return () => {
+            document.removeEventListener('click', clickBackground)
+        }
+    },[])
+   
     
 
   return (

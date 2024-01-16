@@ -11,31 +11,55 @@ import d_education from '/education-dark-icon.svg'
 import d_about from '/about-dark-icon.svg'
 
 
+
 const Navigation = ({is_theme_dark,setAboutModal, setAwardsModal, setEducationModal, setProjectModal, setWorkModal}) => {
+
+    const navigation = [
+        {
+            "name":"About",
+            "image":about,
+            "d_image":d_about,
+            "modal":setAboutModal
+        },
+        {
+            "name":"Awards",
+            "image":award,
+            "d_image":d_award,
+            "modal":setAwardsModal
+
+        },
+        {
+            "name":"Education",
+            "image":education,
+            "d_image":d_education,
+            "modal":setEducationModal
+
+        },
+        {
+            "name":"Project",
+            "image":project,
+            "d_image":d_project,
+            "modal":setProjectModal
+
+        },
+        {
+            "name":"Work",
+            "image":work,
+            "d_image":d_work,
+            "modal":setWorkModal
+
+        },
+    ]
+
   return (
     <div className='w-full h-3/6 md:h-full flex items-center left-transition md:bg-green-800/20 dark:text-slate-300'>
-        <div className='w-full md:w-4/5 h-4/5 flex items-center py-5 m-auto font-mono xl:text-xl'>
+        <div className='w-full md:w-4/5 h-4/5 flex items-center py-5 m-auto font-mono text-xs md:text-lg'>
             <ul className='flex m-auto items-center gap-2 flex-wrap cursor-pointer'>
-                <li className='flex items-center gap-2 p-2 px-5 border md:border-0 w-fit md:w-full rounded-md hover:bg-slate-100/30' onClick={() => setAboutModal(prevState => !prevState)}>
-                    <img src={is_theme_dark ? d_about : about} width='20px' height='20px' alt="" className=''/>
-                    <span>About</span>
-                </li>
-                <li className='flex items-center gap-2 p-2 px-5 border md:border-0 w-fit md:w-full rounded-md hover:bg-slate-100/30' onClick={() => setAwardsModal(prevState => !prevState)}>
-                    <img src={is_theme_dark ? d_award : award} width='20px' height='20px' alt="" className=''/>
-                    <span>Awards</span>
-                </li>
-                <li className='flex items-center gap-2 p-2 px-5 border md:border-0 w-fit md:w-full rounded-md hover:bg-slate-100/30' onClick={() => setEducationModal(prevState => !prevState)}>
-                    <img src={is_theme_dark ? d_education : education} width='20px' height='20px' alt="" className=''/>
-                    <span>Education</span>
-                </li>
-                <li className='flex items-center gap-2 p-2 px-5 border md:border-0 w-fit md:w-full rounded-md hover:bg-slate-100/30' onClick={() => setProjectModal(prevState => !prevState)}>
-                    <img src={is_theme_dark ? d_project : project} width='20px' height='20px' alt="" className='' />
-                    <span>Project</span>
-                </li>
-                <li className='flex items-center gap-2 p-2 px-5 border md:border-0 w-fit md:w-full rounded-md hover:bg-slate-100/30' onClick={() => setWorkModal(prevState => !prevState)}>
-                    <img src={is_theme_dark ? d_work : work} width='20px' height='20px' alt="" className=''/>
-                    <span>Work</span>
-                </li>
+                { navigation.map((value,key)=> (
+                <li className='flex items-center gap-2 p-2 px-5 border md:border-0 w-fit md:w-full rounded-md hover:bg-slate-100/30' onClick={() => value.modal(prevState => !prevState)}>
+                    <img src={is_theme_dark ? value.d_image : value.image} width='20px' height='20px' alt="" className=''/>
+                    <span>{value.name}</span>
+                </li>))}
             </ul>
         </div>
     </div>
