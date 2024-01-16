@@ -34,7 +34,7 @@ const Education = ({educationModal, setEducationModal, is_theme_dark}) => {
           <figcaption className='w-full dark:text-slate-300'>
             <a href="https://www.stjude.edu.ph" target='_blank' className='text-md font-bold xl:text-3xl tracking-wider uppercase '>St. Jude College of Dasmariñas Cavite</a>
             <p  className='text-sm md:text-base open'>Senior High School (June 2018 - April 2020)</p>
-            <p className='text-sm md:text-base open'>Dasmarinas city, Cavite</p>
+            <p className='text-sm md:text-base open'>Dasmariñas city, Cavite</p>
             <p className='text-xs md:text-base lg:text-md mt-5 open'>
             During my Senior High School, I specialized in the Science, Technology, Engineering, and Mathematics strand, where I delved into various scientific and mathematical principles, honing my analytical and problem-solving skills. The curriculum included in-depth studies in subjects like Physics, Chemistry, Biology,Technology, and Mathematics.</p>
           </figcaption>
