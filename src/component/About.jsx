@@ -138,7 +138,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
         <br/>
         <section className='flex flex-col gap-5 w-4/5 h-full md:h-auto m-auto'>
           <article>
-            <h2 className='text-2xl tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Programming Skills</h2>
+            <h2 className='text-lg md:text-2xl tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Programming Skills</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               { programmingskills.map((index,key) => (
               <li key={key}>
@@ -149,7 +149,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             </ul>
           </article>
           <article>
-            <h2 className='text-2xl tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Software Development Tools</h2>
+            <h2 className='text-lg md:text-2xl tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Software Development Tools</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               { softwaretools.map((index,key) => (
               <li key={key}>
@@ -160,7 +160,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             </ul>
           </article>
           <article>
-            <h2 className='text-2xl tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>hard Skills</h2>
+            <h2 className='text-lg md:text-2xl tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>hard Skills</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               { hardskills.map((index,key) => (
               <li key={key}>
@@ -171,7 +171,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             </ul>
           </article>
           <article>
-            <h2 className='text-2xl tracking-widest font-bold font-mono dark:text-slate-200'>SOFT SKILLS</h2>
+            <h2 className='text-lg md:text-2xl tracking-widest font-bold font-mono dark:text-slate-200'>SOFT SKILLS</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               {softskills.map((value,key) => (
                 <li key={key}>
