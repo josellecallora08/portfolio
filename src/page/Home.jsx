@@ -78,7 +78,7 @@ const Home = () => {
     
 
   return (
-    <div className={`w-full h-screen flex items-center`}>
+    <div className={`w-full h-screen flex items-center bg-red-200`}>
        <div className={`relative w-screen h-screen grid md:flex md:flex-wrap md:w-4/5 md:h-4/5 m-auto rounded-md bg-slate-200 md:bg-slate-400 dark:bg-black/50 shadow-xl open-card ${awardsModal || aboutModal || educationModal || projectModal || workModal ? 'duration-500 opacity-0' : ''}`}>
             <div className={`w-4/5 h-4/5 md:w-full md:h-3/6 flex flex-wrap items-center justify-center  m-auto text-center  bounce`}>
                 <article className='mt-8'>
