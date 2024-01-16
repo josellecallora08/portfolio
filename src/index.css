@@ -9,6 +9,10 @@
     animation: opencard 1s;
     overflow: hidden;
 }
+.open-card-home{
+    animation: opencardhome 1s;
+    overflow: hidden;
+}
 .bounce{
     animation: bounce 1s;
 }
@@ -51,7 +55,16 @@
         transform: translateX(0);
     }
 }
-@keyframes opencard {
+
+@keyframes opencard{
+    from{
+       width: 0px; 
+    }
+   to{
+        width: 100%;
+    }
+}
+@keyframes opencardhome{
     from{
        width: 0px; 
     }
@@ -69,6 +82,14 @@
 }
 @media screen and (min-width: 470px) {
     @keyframes opencard {
+        from{
+           width: 0px; 
+        }
+       to{
+            width: 60%;
+        }
+    }
+    @keyframes opencardhome{
         from{
            width: 0px; 
         }

@@ -15,7 +15,7 @@ const Navigation = ({handleModal, is_theme_dark, setEducationModal}) => {
   return (
     <div className='w-full h-3/6 md:h-full left-transition md:bg-green-800/20 dark:text-slate-300'>
         <div className='w-full md:w-4/5 h-4/5 flex items-center py-5 m-auto font-mono xl:text-xl'>
-            <ul className='flex items-center gap-2 flex-wrap cursor-default'>
+            <ul className='flex items-center gap-2 flex-wrap cursor-pointer'>
                 <li className='h-full flex items-center gap-2 p-2 px-5 border w-fit rounded-md hover:bg-slate-100/30' onClick={() => handleModal("work")}>
                     <img src={is_theme_dark ? d_work : work} width='20px' height='20px' alt="" className=''/>
                     <span>Work</span>

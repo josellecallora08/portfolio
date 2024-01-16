@@ -14,8 +14,10 @@ const ThemeMode = ({is_theme_dark}) => {
 
     
   return (
-    <div className={`hover:p-2 rounded-full cursor-pointer hover:bg-gray-200/30 dark:hover:bg-white duration-500`} onClick={handleTheme}>
-        <img src={is_theme_dark ? moon : sun} alt="moon" className='w-7 h-7 md:w-9 md:h-9 xl:w-12 xl:h-12'/>
+    <div className='absolute top-0 right-0 flex items-center justify-center w-20 h-20' >
+      <div className={`hover:p-1 rounded-full cursor-pointer hover:bg-gray-200/30 dark:hover:bg-white duration-500`} onClick={handleTheme}>
+          <img src={is_theme_dark ? moon : sun} alt="moon" className='w-7 h-7 md:w-9 md:h-9 xl:w-12 xl:h-12'/>
+      </div>
     </div>
   )
 }
