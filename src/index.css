@@ -4,18 +4,24 @@
 html{
     background-color: rgba(0, 0, 0, 0.799);
 }
-.close {
+.fade-out{
     animation: closecard .6s forwards;
+}
+.open{
+    animation: open .6s forwards;
     display: flex;
 }
-
 @keyframes closecard {
-    0% { opacity: 1; }
+    0% { opacity: 1; display: flex; }
     100% { opacity: 0; display: none; }
 }
+@keyframes open {
+    0% { opacity: 0;  }
+    100% { opacity: 1;}
 
-.background{
-    background-image: none;
+}
+.font-green{
+    color: rgb(37, 118, 37);
 }
 .open-card{
     animation: opencard 1s;
