@@ -128,8 +128,8 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
         </h2>
         <div className='w-4/5 h-full md:h-4/5 m-auto '>
           <figure className='w-full h-full'>
-            <img src={self} className='w-full h-full mb-5' alt="" />
-            <figcaption className='text-xs md:text-base text-left md:leading-10 md:text-justify dark:text-slate-300 font-mono'>
+            <img src={self} className='w-full h-full mb-5 left-transition' alt="" />
+            <figcaption className='text-xs md:text-base text-left md:leading-10 md:text-justify dark:text-slate-300 font-mono left-transition'>
             My dedication ensures exceptional results and project success. Interestingly, I initially aspired to become a Marine Engineer but found my true passion in Information Systems. Little did I know that this field would lead me to my dream profession, where I can combine my love for developing websites and coding. While coding can be challenging, I find joy in overcoming difficulties, and the satisfaction of solving problems and fixing bugs is truly rewarding.
             </figcaption>
           </figure>
@@ -141,7 +141,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             <h2 className='tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Programming Skills</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               { programmingskills.map((index,key) => (
-              <li key={key}>
+              <li key={key} className='right-transition'>
                 <p className='flex items-center gap-2 p-2 border border-slate-400 w-fit rounded-md shadow-md hover:bg-slate-300/20 dark:text-slate-200 font-mono'>
                   <img src={index.image} className="w-5 h-5" alt="" />{index.name}
                 </p>
@@ -152,7 +152,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             <h2 className='tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Software Development Tools</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               { softwaretools.map((index,key) => (
-              <li key={key}>
+              <li key={key} className='right-transition'>
                 <p className='flex items-center gap-2 p-2 border border-slate-400 w-fit rounded-md shadow-md hover:bg-slate-300/20 dark:text-slate-200 font-mono'>
                   <img src={is_theme_dark ? index.d_image : index.image} className="w-5 h-5" alt="" />{index.name}
                 </p>
@@ -163,7 +163,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             <h2 className='tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>hard Skills</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               { hardskills.map((index,key) => (
-              <li key={key}>
+              <li key={key} className='right-transition'>
                 <p className='flex items-center gap-2 p-2 border border-slate-400 w-fit rounded-md shadow-md hover:bg-slate-300/20 dark:text-slate-200 font-mono'>
                   <img src={is_theme_dark ? index.d_image : index.image} className="w-5 h-5" alt="" />{index.name}
                 </p>
@@ -174,7 +174,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             <h2 className='tracking-widest font-bold font-mono dark:text-slate-200'>SOFT SKILLS</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               {softskills.map((value,key) => (
-                <li key={key}>
+                <li key={key} className='right-transition'>
                 <p className='flex items-center gap-2 p-2 border border-slate-400 w-fit rounded-md shadow-md hover:bg-slate-300/20 dark:text-slate-200 font-mono'>{value}
                 </p>
                 </li>))}
