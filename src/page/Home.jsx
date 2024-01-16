@@ -27,7 +27,27 @@ const Home = () => {
 
   return (
     <div className={`w-screen h-screen flex items-center bg-gray-600/30 background`}>
-        <div className={`relative w-screen h-screen grid grid-rows-2 md:flex md:flex-wrap md:w-4/5 md:h-4/5 border m-auto rounded-md bg-slate-300 md:bg-slate-200 dark:bg-black shadow-xl open-card-home ${awardsModal ? 'duration-500 opacity-0' :  aboutModal ? 'duration-500 opacity-0' : educationModal ? 'duration-500 opacity-0' : projectModal ? 'duration-500 opacity-0' : workModal ? 'duration-500 opacity-0' : '' }`} >
+             {aboutModal ? <About
+            aboutModal={aboutModal}
+            setAboutModal={setAboutModal}
+            is_theme_dark={is_theme_dark} /> : ''}
+        {awardsModal ? <Awards
+            awardsModal={awardsModal}
+            setAwardsModal={setAwardsModal}
+            is_theme_dark={is_theme_dark} /> : ''}
+        {educationModal ? <Education
+            educationModal={educationModal}
+            setEducationModal={setEducationModal}
+            is_theme_dark={is_theme_dark} /> : '' }
+        {projectModal ? <Project
+            projectModal={projectModal}
+            setProjectModal={setProjectModal}
+            is_theme_dark={is_theme_dark} /> : ''}
+        {workModal ? <Work
+            workModal={workModal}
+            setWorkModal={setWorkModal}
+            is_theme_dark={is_theme_dark} /> : ''}
+        <div className={`relative w-screen h-screen grid  md:flex md:flex-wrap md:w-4/5 md:h-4/5 border m-auto rounded-md bg-slate-300 md:bg-slate-200 dark:bg-black shadow-xl open-card-home ${awardsModal ? 'duration-500 opacity-0' :  aboutModal ? 'duration-500 opacity-0' : educationModal ? 'duration-500 opacity-0' : projectModal ? 'duration-500 opacity-0' : workModal ? 'duration-500 opacity-0' : '' }`} >
             <div className={`w-4/5 h-4/5 md:w-full md:h-3/6 flex flex-wrap items-center justify-center  m-auto text-center  bounce`}>
                 <article className='mt-8'>
                     <h1 className='text-3xl md:text-5xl uppercase tracking-wider font-black font-mono dark:text-slate-300 cursor-default show'>Joselle E. Callora</h1>
@@ -36,7 +56,7 @@ const Home = () => {
                     </p>
                 </article>
             </div>
-            <div className='w-4/5 h-4/5 md:h-3/6 md:w-full md:flex m-auto'>
+            <div className='grid gap-2 w-4/5 h-4/5 md:gap-0 md:h-3/6 md:w-full md:flex m-auto'>
                 <Navigation
                     setAboutModal={setAboutModal}
                     setAwardsModal={setAwardsModal}
@@ -52,28 +72,6 @@ const Home = () => {
             <ThemeMode
             is_theme_dark={is_theme_dark}/>
         </div>  
-        {aboutModal ? <About
-            aboutModal={aboutModal}
-            setAboutModal={setAboutModal}
-            is_theme_dark={is_theme_dark} /> : ''}
-        {awardsModal ? <Awards
-            awardsModal={awardsModal}
-            setAwardsModal={setAwardsModal}
-            is_theme_dark={is_theme_dark} /> : ''}
-        {educationModal ? <Education
-            educationModal={educationModal}
-            setEducationModal={setEducationModal}
-            is_theme_dark={is_theme_dark}
-        /> : '' }
-        {projectModal ? <Project
-            projectModal={projectModal}
-            setProjectModal={setProjectModal}
-            is_theme_dark={is_theme_dark} /> : ''}
-        {workModal ? <Work
-            workModal={workModal}
-            setWorkModal={setWorkModal}
-            is_theme_dark={is_theme_dark} /> : ''}
-        
     </div>
   )
 }
