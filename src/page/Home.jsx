@@ -23,6 +23,7 @@ const Home = () => {
 
   return (
     <div className={`w-screen h-screen flex items-center bg-gray-600/30 background`}>
+        <Education/>
         <div className={`relative w-screen h-screen grid grid-rows-2 md:flex md:flex-wrap md:w-4/5 md:h-4/5 border m-auto rounded-md bg-slate-300 md:bg-white dark:bg-black shadow-xl open-card`} >
             <div className={`w-4/5 h-4/5 md:w-full md:h-3/6 flex flex-wrap items-center justify-center  m-auto text-center  bounce`}>
                 <article className='mt-8'>
