@@ -1,10 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 html{
     background-color: rgba(0, 0, 0, 0.799);
 }
+.close {
+    animation: closecard .6s forwards;
+    display: flex;
+}
+
+@keyframes closecard {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
 .background{
     background-image: none;
 }
@@ -12,10 +21,7 @@ html{
     animation: opencard 1s;
     overflow: hidden;
 }
-.open-card-home{
-    animation: opencardhome 1s;
-    overflow: hidden;
-}
+
 .bounce{
     animation: bounce 1s;
 }
@@ -33,48 +39,25 @@ html{
     animation: show 2s;
 }
 @keyframes show {
-    0%{
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
 }
 @keyframes left-transition {
-    from{
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(0);
-    }
+    from{transform: translateX(-100%)}
+    to{transform: translateX(0);}
 }
 
 
 @keyframes right-transition {
-    from{
-        transform: translateX(100%);
-    }
-    to{
-        transform: translateX(0);
-    }
+    from{transform: translateX(100%);}
+    to{transform: translateX(0);}
 }
 
 @keyframes opencard{
-    from{
-       width: 0px; 
-    }
-   to{
-        width: 100%;
-    }
+    from{width: 0px;}
+    to{width: 100%;}
 }
-@keyframes opencardhome{
-    from{
-       width: 0px; 
-    }
-   to{
-        width: 100%;
-    }
-}
+
 @keyframes bounce {
     50%{
         transform: translateY(-20px);
