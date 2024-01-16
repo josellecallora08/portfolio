@@ -129,16 +129,16 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
         <div className='w-4/5 h-full md:h-4/5 m-auto '>
           <figure className='w-full h-full'>
             <img src={self} className='w-full h-full mb-5' alt="" />
-            <figcaption className='text-left md:leading-10 md:text-justify dark:text-slate-300 font-mono'>
+            <figcaption className='text-xs md:text-base text-left md:leading-10 md:text-justify dark:text-slate-300 font-mono'>
             My dedication ensures exceptional results and project success. Interestingly, I initially aspired to become a Marine Engineer but found my true passion in Information Systems. Little did I know that this field would lead me to my dream profession, where I can combine my love for developing websites and coding. While coding can be challenging, I find joy in overcoming difficulties, and the satisfaction of solving problems and fixing bugs is truly rewarding.
             </figcaption>
           </figure>
         </div>
         <br/>
         <br/>
-        <section className='flex flex-col gap-5 w-4/5 h-full md:h-auto m-auto'>
+        <section className='flex flex-col gap-5 w-4/5 h-full md:h-auto m-auto text-xs md:text-base xl:text-2xl'>
           <article>
-            <h2 className='text-lg md:text-2xl tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Programming Skills</h2>
+            <h2 className='tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Programming Skills</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               { programmingskills.map((index,key) => (
               <li key={key}>
@@ -149,7 +149,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             </ul>
           </article>
           <article>
-            <h2 className='text-lg md:text-2xl tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Software Development Tools</h2>
+            <h2 className='tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>Software Development Tools</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               { softwaretools.map((index,key) => (
               <li key={key}>
@@ -160,7 +160,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             </ul>
           </article>
           <article>
-            <h2 className='text-lg md:text-2xl tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>hard Skills</h2>
+            <h2 className='tracking-widest font-bold font-mono dark:text-slate-200 uppercase'>hard Skills</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               { hardskills.map((index,key) => (
               <li key={key}>
@@ -171,7 +171,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
             </ul>
           </article>
           <article>
-            <h2 className='text-lg md:text-2xl tracking-widest font-bold font-mono dark:text-slate-200'>SOFT SKILLS</h2>
+            <h2 className='tracking-widest font-bold font-mono dark:text-slate-200'>SOFT SKILLS</h2>
             <ul className='my-5 flex gap-3 flex-wrap cursor-default'>
               {softskills.map((value,key) => (
                 <li key={key}>
