@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 
 
@@ -18,15 +18,50 @@ const Home = () => {
     const [educationModal, setEducationModal] = useState(false)
     const [projectModal, setProjectModal] = useState(false)
     const [workModal, setWorkModal] = useState(false)
-   
+    const close_modal = false;
+    
+    const touchStartX = useRef(0)
+    const touchStartY = useRef(0)
+    const touchEndX = useRef(0)
+    const touchEndY = useRef(0)
+
+    const handleTouchStart = (event) => {
+        touchStartX.current = event.changedTouches[0].screenX;
+        touchStartY.current = event.changedTouches[0].screenY;
+    }
+    const handleTouchEnd = (event) => {
+        touchEndX.current = event.changedTouches[0].screenX;
+        touchEndY.current = event.changedTouches[0].screenY;
+        handleGesture()
+    }
+
+    const handleGesture = () => {
+        if(touchEndX.current < touchStartX.current || touchEndX.current > touchStartX.current){
+            setAwardsModal(close_modal);
+            setAboutModal(close_modal);
+            setEducationModal(close_modal);
+            setProjectModal(close_modal);
+            setWorkModal(close_modal);
+        }
+    }
+
+    useEffect(() => {
+        document.documentElement.addEventListener('touchstart', handleTouchStart);
+        document.documentElement.addEventListener('touchend', handleTouchEnd);
+    
+        return () => {
+            document.documentElement.removeEventListener('touchstart', handleTouchStart);
+            document.documentElement.removeEventListener('touchend', handleTouchEnd);
+        };
+    }, [handleTouchEnd]);
+    
+    
     useEffect(() => {
         document.documentElement.classList.toggle('dark', is_theme_dark);
         console.log(is_theme_dark)
     }, [is_theme_dark])
     
     useEffect(() => {
-        const close_modal = false;
-    
         const closeModalStates = () => {
             setAwardsModal(close_modal);
             setAboutModal(close_modal);
@@ -74,12 +109,13 @@ const Home = () => {
             document.removeEventListener('click', clickBackground)
         }
     },[])
-   
+    
+ 
     
 
   return (
-    <div className={`w-full h-screen flex items-center bg-red-200`}>
-       <div className={`relative w-screen h-screen grid md:flex md:flex-wrap md:w-4/5 md:h-4/5 m-auto rounded-md bg-slate-200 md:bg-slate-400 dark:bg-black/50 shadow-xl open-card ${awardsModal || aboutModal || educationModal || projectModal || workModal ? 'duration-500 opacity-0' : ''}`}>
+    <div className={`w-full h-screen flex items-center`}>
+       <div className={`relative w-screen h-screen grid rounded-md shadow-xl  bg-slate-200  m-auto  md:flex md:flex-col md:w-4/5 md:h-4/5 md:bg-slate-100 dark:bg-black/80open-card ${awardsModal || aboutModal || educationModal || projectModal || workModal ? 'duration-500 opacity-0' : ''}`}>
             <div className={`w-4/5 h-4/5 md:w-full md:h-3/6 flex flex-wrap items-center justify-center  m-auto text-center  bounce`}>
                 <article className='mt-8'>
                     <h1 className='text-2xl md:text-5xl uppercase tracking-wider font-black font-mono dark:text-slate-300 cursor-default show'>Joselle E. Callora</h1>
