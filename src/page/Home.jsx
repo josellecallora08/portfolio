@@ -20,31 +20,32 @@ const Home = () => {
     const [workModal, setWorkModal] = useState(false)
     const close_modal = false;
     
-    const touchStartX = useRef(0)
-    const touchStartY = useRef(0)
-    const touchEndX = useRef(0)
-    const touchEndY = useRef(0)
-
+    const touchStartX = useRef(0);
+    const touchStartY = useRef(0);
+    const touchEndX = useRef(0);
+    const touchEndY = useRef(0);
+    
     const handleTouchStart = (event) => {
-        touchStartX.current = event.changedTouches[0].screenX;
-        touchStartY.current = event.changedTouches[0].screenY;
-    }
+        touchStartX.current = event.touches[0].screenX;
+        touchStartY.current = event.touches[0].screenY;
+    };
+    
     const handleTouchEnd = (event) => {
         touchEndX.current = event.changedTouches[0].screenX;
         touchEndY.current = event.changedTouches[0].screenY;
-        handleGesture()
-    }
-
+        handleGesture();
+    };
+    
     const handleGesture = () => {
-        if(touchEndX.current < touchStartX.current || touchEndX.current > touchStartX.current){
+        if (Math.abs(touchEndX.current - touchStartX.current) > 50) {
             setAwardsModal(close_modal);
             setAboutModal(close_modal);
             setEducationModal(close_modal);
             setProjectModal(close_modal);
             setWorkModal(close_modal);
         }
-    }
-
+    };
+    
     useEffect(() => {
         document.documentElement.addEventListener('touchstart', handleTouchStart);
         document.documentElement.addEventListener('touchend', handleTouchEnd);
@@ -54,6 +55,7 @@ const Home = () => {
             document.documentElement.removeEventListener('touchend', handleTouchEnd);
         };
     }, [handleTouchStart, handleTouchEnd]);
+    
     
     
     useEffect(() => {
