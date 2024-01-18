@@ -28,13 +28,13 @@ const Contact = ({is_theme_dark}) => {
             </p>
             <div className='md:absolute flex gap-2 cursor-default bottom-10 right-10'>
                 <a href="https://www.facebook.com/josellecallora08" target="_blank">
-                    <img src={facebook} className='w-8 h-8 xl:w-12 xl:h-12' alt="" />
+                    <img src={facebook} className='w-8 h-8 xl:w-12 xl:h-12 md:hover:-translate-y-2 duration-100' alt="" />
                 </a>
                 <a href="https://github.com/josellecallora08" target="_blank">
-                                    <img src={is_theme_dark ? d_github : github} className='w-8 h-8 xl:w-12 xl:h-12' alt="" />
+                    <img src={is_theme_dark ? d_github : github} className='w-8 h-8 xl:w-12 xl:h-12 md:hover:-translate-y-2 duration-100' alt="" />
                 </a>
                 <a href="https://www.linkedin.com/in/josellecallora08/" target="_blank">
-                    <img src={is_theme_dark ? d_linkedin : linkedin} className='w-8 h-8 xl:w-12 xl:h-12' alt="" />
+                    <img src={is_theme_dark ? d_linkedin : linkedin} className='w-8 h-8 xl:w-12 xl:h-12 md:hover:-translate-y-2 duration-100' alt="" />
                 </a>
             </div>
         </div>

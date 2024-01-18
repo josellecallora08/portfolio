@@ -11,10 +11,10 @@ body{
 }
 
 .fade-out{
-    animation: closecard .6s forwards;
+    animation: closecard .3s forwards;
 }
 .open{
-    animation: open .6s forwards;
+    animation: open .3s forwards;
 }
 @keyframes closecard {
     0% { opacity: 1; display: flex; }
@@ -34,17 +34,17 @@ body{
 }
 
 .bounce{
-    animation: bounce 1s;
+    animation: bounce .3s;
 }
 .up{
     animation: up 2s;
     overflow: hidden;
 }
 .left-transition{
-    animation: left-transition 2s;
+    animation: left-transition 1s;
 }
 .right-transition{
-    animation: right-transition 2s;
+    animation: right-transition 1s;
 }
 .show{
     animation: show 2s;
