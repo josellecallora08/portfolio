@@ -10,7 +10,7 @@ const Education = ({educationModal, setEducationModal, is_theme_dark}) => {
 
   return (
     <section id="education" className={`absolute w-full h-full ${educationModal ? 'open' : 'hidden fade-out'} justify-center items-center`}>
-      <div className={`relative w-full h-auto md:w-3/5 m-auto bg-slate-300 rounded-md md:bg-slate-200 dark:bg-black/80 shadow-xl overflow-hidden`}>
+      <div className={`relative w-full h-auto md:w-3/5 m-auto bg-slate-300 rounded-md md:bg-slate-200/80 dark:bg-black/80 shadow-xl overflow-hidden`}>
         <h2 className='flex justify-start gap-2 text-2xl w-4/5 mx-auto h-fit py-8 md:text-4xl uppercase font-semibold font-mono group cursor-default tracking-widest dark:text-slate-300 bounce '>
           <img src={is_theme_dark ? d_education : education} alt="" className='w-8 h-8 md:w-16 md:h-10'/>Education
         </h2>

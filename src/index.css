@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 body {
-    background: url(/background.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    backdrop-filter: blur(5px);
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0;
 }
 
 .fade-out{
