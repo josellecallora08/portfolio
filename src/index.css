@@ -7,6 +7,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100%;
 }
 
 .fade-out{
@@ -27,8 +28,8 @@ body{
 .font-green{
     color: rgb(37, 118, 37);
 }
-.open-card{
-    animation: opencard .5s ease-in-out;
+.fade-up{
+    animation: fade-up .5s ease-in-out;
     overflow: hidden;
 }
 
@@ -63,10 +64,6 @@ body{
     to{transform: translateX(0);}
 }
 
-@keyframes opencard{
-    from{width: 0px;}
-    to{width: 100%;}
-}
 
 @keyframes bounce {
     50%{
