@@ -18,21 +18,18 @@ const Home = () => {
     const [educationModal, setEducationModal] = useState(false)
     const [projectModal, setProjectModal] = useState(false)
     const [workModal, setWorkModal] = useState(false)
+
     const close_modal = false;
     
     const touchStartX = useRef(0);
-    const touchStartY = useRef(0);
     const touchEndX = useRef(0);
-    const touchEndY = useRef(0);
     
     const handleTouchStart = (event) => {
         touchStartX.current = event.touches[0].screenX;
-        touchStartY.current = event.touches[0].screenY;
     };
     
     const handleTouchEnd = (event) => {
         touchEndX.current = event.changedTouches[0].screenX;
-        touchEndY.current = event.changedTouches[0].screenY;
         handleGesture();
     };
     
@@ -116,8 +113,8 @@ const Home = () => {
     
 
   return (
-    <div className={`w-full h-screen flex items-center`}>
-       <div className={`relative w-screen h-screen grid rounded-md shadow-xl  bg-slate-200  m-auto  md:flex md:flex-col md:w-4/5 md:h-4/5 md:bg-slate-100 dark:bg-black/80 open-card ${awardsModal || aboutModal || educationModal || projectModal || workModal ? 'duration-500 opacity-0' : ''}`}>
+    <div className={`w-full h-screen grid self-center`}>
+       <div className={`relative w-screen h-screen grid rounded-md shadow-xl bg-slate-200/60 m-auto md:flex-col md:w-4/5 md:h-4/5 md:bg-red-100 dark:bg-black/80 open-card ${awardsModal || aboutModal || educationModal || projectModal || workModal ? 'duration-500 hidden' : 'md:flex open'}`}>
             <div className={`w-4/5 h-4/5 md:w-full md:h-3/6 flex flex-wrap items-center justify-center  m-auto text-center  bounce`}>
                 <article className='mt-8'>
                     <h1 className='text-2xl md:text-5xl uppercase tracking-wider font-black font-mono dark:text-slate-300 cursor-default show'>Joselle E. Callora</h1>

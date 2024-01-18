@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body{
     background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    background-attachment: fixed;
+    height: fit-content; 
 }
 
 .fade-out{
@@ -14,7 +15,6 @@ body {
 }
 .open{
     animation: open .6s forwards;
-    display: flex;
 }
 @keyframes closecard {
     0% { opacity: 1; display: flex; }
@@ -22,7 +22,7 @@ body {
 }
 @keyframes open {
     0% { opacity: 0;  }
-    100% { opacity: 1;}
+    100% { opacity: 1; display: flex;}
 
 }
 .font-green{
@@ -79,20 +79,8 @@ body {
 }
 @media screen and (min-width: 470px) {
     @keyframes opencard {
-        from{
-           width: 0px; 
-        }
-       to{
-            width: 60%;
-        }
-    }
-    @keyframes opencardhome{
-        from{
-           width: 0px; 
-        }
-       to{
-            width: 80%;
-        }
+        from{width: 0px;}
+        to{width: 80%;}
     }
     @keyframes up {
         0%{
