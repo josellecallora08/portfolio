@@ -36,7 +36,7 @@ const Education = ({educationModal, setEducationModal, is_theme_dark}) => {
             <p  className='text-sm md:text-base open'>Senior High School (June 2018 - April 2020)</p>
             <p className='text-sm md:text-base open'>Dasmariñas city, Cavite</p>
             <p className='text-xs md:text-base lg:text-md mt-5 open'>
-            During my Senior High School, I specialized in the Science, Technology, Engineering, and Mathematics strand, where I delved into various scientific and mathematical principles, honing my analytical and problem-solving skills. The curriculum included in-depth studies in subjects like Physics, Chemistry, Biology,Technology, and Mathematics.</p>
+            During my Senior High School, I specialized in the Science, Technology, Engineering, and Mathematics strand, where I delved into various scientific and mathematical principles, enhancing my analytical and problem-solving skills. The curriculum included in-depth studies in subjects like Physics, Chemistry, Biology,Technology, and Mathematics.</p>
           </figcaption>
         </figure>
         <figure className='flex flex-col w-full items-center gap-5 font-mono  font-semi-bold mb-10'>
@@ -48,7 +48,7 @@ const Education = ({educationModal, setEducationModal, is_theme_dark}) => {
             <p className='text-sm md:text-base open'>Junior High School  (July 2015 - May 2018)</p>
             <p className='text-sm md:text-base open'>Bacoor city, Cavite</p>
             <p className='text-xs md:text-base lg:text-md mt-5 open'>
-            During my Junior High School at Affordable Private Education Center Schools,I found myself immersed in a transformative educational environment. The introduction of Life Labs exposed me to real-world problems, fostering a paradigm shift in my approach to learning.  This experience has not only shaped my academic journey but has also instilled in me a resilience and passion for learning that continues to drive my pursuit of knowledge.</p>
+            During my Junior High School at Affordable Private Education Center Schools, I found myself immersed in a different educational environment. Life Labs has exposed me to real-world problems, fostering a paradigm shift in my approach to learning.  This experience has not only shaped my academic journey but has also instilled in me a resilience and passion for learning.</p>
           </figcaption>
         </figure>
        </div>

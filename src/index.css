@@ -29,22 +29,22 @@ body{
     color: rgb(37, 118, 37);
 }
 .open-card{
-    animation: opencard .5s;
+    animation: opencard .5s ease-in-out;
     overflow: hidden;
 }
 
 .bounce{
-    animation: bounce .3s;
+    animation: bounce .3s ease-in-out;
 }
 .up{
-    animation: up 2s;
+    animation: up 2s ease-in-out;
     overflow: hidden;
 }
 .left-transition{
-    animation: left-transition .6s;
+    animation: left-transition .6s ease-in-out;
 }
 .right-transition{
-    animation: right-transition .6s;
+    animation: right-transition .6s ease-in-out;
 }
 .show{
     animation: show .8s;
