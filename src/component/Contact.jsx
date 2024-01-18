@@ -16,16 +16,16 @@ const Contact = ({is_theme_dark}) => {
             <span className='absolute left-0 bottom-0 border-b-2 w-full md:w-0 border-black dark:border-white md:group-hover:w-full duration-500'></span>
         </h2>
         <div className='flex flex-col flex-wrap gap-5 mt-5 font-mono xl:text-lg dark:text-slate-300 cursor-default'>
-            <a href="mailto: josellecallora08@gmail.com" className='flex items-center gap-3 cursor-pointer md:hover:underline'>
+            <a href="mailto: josellecallora08@gmail.com" className='flex items-center gap-3 cursor-pointer md:hover:underline text-xs md:text-base lg:text-md'>
                 <span>
                     <img src={gmail} className='w-5 h-5 xl:w-8 xl:h-8' alt="" />
                 </span> josellecallora08@gmail.com
             </a>
-            <a href={resume} className='flex items-center gap-3 cursor-pointer md:hover:underline' download>
+            <a href={resume} className='flex items-center gap-3 cursor-pointer md:hover:underline text-xs md:text-base lg:text-md' download>
                 <img src={resume_icon} className='w-5 h-5 xl:w-8 xl:h-8' alt="Resume"/>
                     Curriculum Vitae
             </a>
-            <p className='w-full flex items-center gap-3'>
+            <p className='w-full flex items-center gap-3 text-xs md:text-base lg:text-md'>
                 <span>
                     <img src={location_dark} className='w-5 h-5 xl:w-8 xl:h-8' alt="" />
                 </span> 
