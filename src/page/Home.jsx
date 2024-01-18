@@ -21,37 +21,37 @@ const Home = () => {
 
     const close_modal = false;
     
-    const touchStartX = useRef(0);
-    const touchEndX = useRef(0);
+    // const touchStartX = useRef(0);
+    // const touchEndX = useRef(0);
     
-    const handleTouchStart = (event) => {
-        touchStartX.current = event.touches[0].screenX;
-    };
+    // const handleTouchStart = (event) => {
+    //     touchStartX.current = event.touches[0].screenX;
+    // };
     
-    const handleTouchEnd = (event) => {
-        touchEndX.current = event.changedTouches[0].screenX;
-        handleGesture();
-    };
+    // const handleTouchEnd = (event) => {
+    //     touchEndX.current = event.changedTouches[0].screenX;
+    //     handleGesture();
+    // };
     
-    const handleGesture = () => {
-        if (Math.abs(touchEndX.current - touchStartX.current) > 50) {
-            setAwardsModal(close_modal);
-            setAboutModal(close_modal);
-            setEducationModal(close_modal);
-            setProjectModal(close_modal);
-            setWorkModal(close_modal);
-        }
-    };
+    // const handleGesture = () => {
+    //     if (Math.abs(touchEndX.current - touchStartX.current) > 50) {
+    //         setAwardsModal(close_modal);
+    //         setAboutModal(close_modal);
+    //         setEducationModal(close_modal);
+    //         setProjectModal(close_modal);
+    //         setWorkModal(close_modal);
+    //     }
+    // };
     
-    useEffect(() => {
-        document.documentElement.addEventListener('touchstart', handleTouchStart);
-        document.documentElement.addEventListener('touchend', handleTouchEnd);
+    // useEffect(() => {
+    //     document.documentElement.addEventListener('touchstart', handleTouchStart);
+    //     document.documentElement.addEventListener('touchend', handleTouchEnd);
     
-        return () => {
-            document.documentElement.removeEventListener('touchstart', handleTouchStart);
-            document.documentElement.removeEventListener('touchend', handleTouchEnd);
-        };
-    }, [handleTouchStart, handleTouchEnd]);
+    //     return () => {
+    //         document.documentElement.removeEventListener('touchstart', handleTouchStart);
+    //         document.documentElement.removeEventListener('touchend', handleTouchEnd);
+    //     };
+    // }, [handleTouchStart, handleTouchEnd]);
     
     
     
