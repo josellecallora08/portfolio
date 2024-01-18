@@ -29,7 +29,7 @@ body{
     color: rgb(37, 118, 37);
 }
 .open-card{
-    animation: opencard 1s;
+    animation: opencard .5s;
     overflow: hidden;
 }
 
@@ -41,13 +41,13 @@ body{
     overflow: hidden;
 }
 .left-transition{
-    animation: left-transition 1s;
+    animation: left-transition .6s;
 }
 .right-transition{
-    animation: right-transition 1s;
+    animation: right-transition .6s;
 }
 .show{
-    animation: show 2s;
+    animation: show .8s;
 }
 @keyframes show {
     0%{opacity: 0%;}
