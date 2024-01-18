@@ -115,7 +115,7 @@ const Home = () => {
   return (
     <div className={`w-full h-screen grid self-center`}>
        <div className={`relative w-screen h-screen flex flex-col rounded-md shadow-xl bg-slate-200/50 md:bg-slate-200/70 m-auto md:flex-col md:w-4/5 md:h-4/5 dark:bg-black/80 open-card ${awardsModal || aboutModal || educationModal || projectModal || workModal ? 'duration-500 hidden' : 'md:flex open'}`}>
-            <div className={`w-4/5 h-2/5 md:w-full md:h-3/6 flex items-center justify-center  m-auto text-center  bounce`}>
+            <div className={`w-4/5 h-2/5 md:w-full md:h-3/6 flex mt-8 items-center justify-center  m-auto text-center  bounce`}>
                 <article className='mt-8'>
                     <h1 className='text-2xl md:text-5xl uppercase tracking-wider font-black font-mono dark:text-slate-300 cursor-default show'>Joselle E. Callora</h1>
                     <p className='text-xs md:text-base lg:text-md text-center md:w-4/5 m-auto dark:text-slate-300 md:px-10 py-5 tracking-wider capitalize font-mono up cursor-default' >
