@@ -7,8 +7,8 @@ import js from '/js-cert.svg'
 
 const Awards = ({awardsModal, setAwardsModal, is_theme_dark}) => {
   return (
-    <section id="award" className={`absolute w-full h-full ${awardsModal ? 'open' : 'fade-out hidden'} justify-center items-center`}>
-      <div className={`relative w-full h-full md:w-3/5 m-auto bg-slate-200/50 rounded-md md:bg-slate-200/70 dark:bg-black/50 shadow-xl  overflow-hidden`}>
+    <section id="awards" className={`absolute w-full h-full ${awardsModal ? 'open' : 'fade-out hidden'} justify-center items-center`}>
+      <div className={`relative w-full h-full md:h-4/5 md:w-3/5 m-auto bg-slate-200/50 rounded-md md:bg-slate-200/70 dark:bg-black/50 shadow-xl  overflow-hidden`}>
         <h2 className='flex justify-start gap-2 text-2xl w-4/5 mx-auto h-fit py-10 md:text-4xl uppercase font-semibold font-mono group cursor-default tracking-widest dark:text-slate-300 bounce'>
         <img src={is_theme_dark ? d_award : award} alt="" className='w-8 h-8 md:w-16 md:h-10'/>award
         </h2>

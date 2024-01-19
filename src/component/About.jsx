@@ -125,10 +125,10 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
         <h2 className='flex justify-start gap-2 text-2xl w-4/5 mx-auto h-fit py-10 md:text-4xl uppercase font-semibold font-mono group cursor-default tracking-widest dark:text-slate-300 bounce'>
         <img src={is_theme_dark ? d_about : about} alt="" className='w-8 h-8 md:w-16 md:h-10'/>About
         </h2>
-        <div className='w-4/5 h-full md:flex md:flex-col md:gap-5 md:h-4/5 m-auto overflow-y-auto'>
+        <div className='w-4/5 h-full md:flex md:flex-col md:gap-5 md:h-4/5 m-auto overflow-hidden overflow-y-auto'>
           <figure className='w-full h-auto flex flex-col'>
             <img src={self} className='w-full object-cover h-auto mb-5 left-transition' alt="" />
-            <figcaption className='text-xs md:text-base lg:text-md md:h-32 text-left md:text-justify dark:text-slate-300 font-mono left-transition'>
+            <figcaption className='text-xs mb-5 md:text-base lg:text-md md:h-32 text-left md:text-justify dark:text-slate-300 font-mono left-transition'>
             My dedication ensures exceptional results and project success. Interestingly, I initially aspired to become a Marine Engineer but found my true passion in Information Systems. Little did I know that this field would lead me to my dream profession, where I can combine my love for developing websites and coding. While coding can be challenging, I find joy in overcoming difficulties, and the satisfaction of solving problems and fixing bugs is truly rewarding.
             </figcaption>
           </figure>
