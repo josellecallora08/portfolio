@@ -120,7 +120,7 @@ const About = ({aboutModal, setAboutModal,is_theme_dark}) => {
   ]
   
   return (
-    <section id="about" className={`absolute ${aboutModal ? 'open' : 'hidden fade-out'} justify-center items-center w-full h-full`}>
+    <section id="about" className={`fixed ${aboutModal ? 'flex open' : 'hidden fade-out'} justify-center items-center w-full h-full`}>
       <div className={`relative w-full h-auto  md:h-4/5 md:w-3/5 m-auto bg-slate-200/50 rounded-md md:bg-slate-200/70  dark:bg-black/50 shadow-xl backdrop-blur-lg overflow-hidden`}>
         <h2 className='flex justify-start gap-2 text-2xl w-4/5 mx-auto h-fit py-10 md:text-4xl uppercase font-semibold font-mono group cursor-default tracking-widest dark:text-slate-300 bounce'>
         <img src={is_theme_dark ? d_about : about} alt="" className='w-8 h-8 md:w-16 md:h-10'/>About
