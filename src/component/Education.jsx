@@ -24,7 +24,7 @@ const Education = ({educationModal, setEducationModal, is_theme_dark}) => {
             <p className='text-sm md:text-base open'>Bachelor of Science in Information Systems (September 2020 - Current)</p>
             <p className='text-sm md:text-base open'>Manila</p>
             <p className='text-xs md:text-base lg:text-md mt-5 open'>
-            During my College, I pursued a Bachelor of Science in Information Systems, consistently earning a spot on the Dean's List. The program covered a spectrum of subjects, from Web Development and Programming to Statistics and Entrepreneurship.Courses in Web Development provided a comprehensive understanding of creating dynamic and interactive websites, utilizing languages such as HTML, CSS, and JavaScript, along with exploring frameworks for advanced development. These skills not only broadened my technical expertise but also laid the groundwork for a user-centric approach in the design of modern information systems.</p>
+            During my College, I pursued a Bachelor of Science in Information Systems, consistently earning a spot on the Dean's List. The program covered subjects, from Web Development and Programming to Statistics and Entrepreneurship. Courses in Web Development provided a comprehensive understanding of creating dynamic with HTML, CSS, JavaScript and PHP Procedural.</p>
           </figcaption>
         </figure>
         <figure className='flex flex-col w-full items-center gap-5 font-mono font-semi-bold '>
